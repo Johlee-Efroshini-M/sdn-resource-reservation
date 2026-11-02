@@ -1,0 +1,6 @@
+clients,accepted,conflict,no_capacity,failed,accept_ratio,max_trunk_Mbps,never_over_capacity,avg_latency_ms
+5,3,1,1,0,60%,9.0,YES,8.4
+10,6,3,1,0,60%,10.0,YES,8.1
+20,7,10,3,0,35%,10.0,YES,11.7
+40,9,25,6,0,22%,10.0,YES,22.9
+80,11,62,7,0,14%,10.0,YES,41.6

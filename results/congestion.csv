@@ -1,0 +1,4 @@
+condition,reserved_Mbps,h1->h3 measured_Mbps
+"A. baseline: no reservation, flood",-,0.73
+"B. static: reservation, no best-effort limit",4,0.73
+C. proposed: reservation + dynamic best-effort limit,4,4.05

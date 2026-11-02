@@ -1,0 +1,14 @@
+case,expected,got,reason,result
+unknown destination host,ERROR,ERROR,unknown host,PASS
+src == dst,ERROR,ERROR,parameters out of range,PASS
+negative bandwidth,ERROR,ERROR,parameters out of range,PASS
+bandwidth above link capacity,ERROR,ERROR,parameters out of range,PASS
+zero duration,ERROR,ERROR,parameters out of range,PASS
+non-IP addresses,ERROR,ERROR,invalid parameters,PASS
+release unknown id,ERROR,ERROR,unknown reservation id,PASS
+unknown command,ERROR,ERROR,bad command,PASS
+valid 8 Mbps request,ACCEPTED,ACCEPTED,,PASS
+overbooking (8+5 > 10),REJECTED,REJECTED,insufficient bandwidth,PASS
+duplicate flow (conflict),REJECTED,REJECTED,conflict,PASS
+fits in remaining 2 Mbps,ACCEPTED,ACCEPTED,,PASS
+"binary garbage, then server alive?",alive,alive,,PASS
